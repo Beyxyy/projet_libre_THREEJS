@@ -355,6 +355,9 @@ camera.position.x = -10
 camera.position.y = 10
 camera.position.z = 10
 scene.add(camera)
+const helper = new THREE.CameraHelper( camera );
+
+scene.add( helper );
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
